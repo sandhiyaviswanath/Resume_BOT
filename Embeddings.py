@@ -29,7 +29,7 @@ class Embedding():
             num_complete_batches = len(resume_texts)//batch_size  # Number of complete batches
             remaining_texts = len(resume_texts)%batch_size  # Number of texts remaining after complete batches
         
-            client = OpenAI(api_key="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")
+            client = OpenAI(api_key="your API KYE")
             
             # Process complete batches
             for batch_index in range(num_complete_batches):
