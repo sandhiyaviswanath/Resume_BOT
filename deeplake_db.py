@@ -21,6 +21,7 @@ class DeeplakeDB:
         
         except Exception as e:
             self.logger.critical(f'Error due to {e}', exc_info=True)
+            print(e)
             return self.EMPTY_LIST
 
     def vector_search(self,vector_store,jd_embeddings):
